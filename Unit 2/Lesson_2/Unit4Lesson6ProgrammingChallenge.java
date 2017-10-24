@@ -4,36 +4,16 @@ public class Unit4Lesson6ProgrammingChallenge
 {
   static String alarmClock (int day, boolean vacation) {
     if (vacation) {
-      if (day == 0) {
+      if (day == 0 || 6) {
         return "Off";
-      } else if (day == 1) {
-          return "10.00";
-      } else if (day == 2) {
-          return "10.00";
-      } else if (day == 3) {
-          return "10.00";
-      } else if (day == 4) {
-          return "10.00";
-      } else if (day == 5) {
-          return "10.00";
-      } else if (day == 6) {
-          return "Off";
+      } else {
+        return "10:00");
       }
     } else {
-      if (day == 0) {
-        return "10.00";
-      } else if (day == 1) {
-          return "7.00";
-      } else if (day == 2) {
-          return "7.00";
-      } else if (day == 3) {
-          return "7.00";
-      } else if (day == 4) {
-          return "7.00";
-      } else if (day == 5) {
-          return "7.00";
-      } else if (day == 6) {
-          return "10.00";
+      if (day == 0 || 6) {
+        return "10:00";
+      } else {
+        return "7:00");
       }    
     }
     return "d"; //Never Actually reached
