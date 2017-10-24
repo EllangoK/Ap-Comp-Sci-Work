@@ -4,19 +4,18 @@ public class Unit4Lesson6ProgrammingChallenge
 {
   static String alarmClock (int day, boolean vacation) {
     if (vacation) {
-      if (day == 0 || 6) {
+      if (day == 0 || day == 6) {
         return "Off";
       } else {
-        return "10:00");
+        return "10:00";
       }
     } else {
-      if (day == 0 || 6) {
+      if (day == 0 || day == 6) {
         return "10:00";
       } else {
-        return "7:00");
+        return "7:00";
       }    
     }
-    return "d"; //Never Actually reached
   }
 
   
