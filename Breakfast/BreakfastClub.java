@@ -10,7 +10,7 @@ public class BreakfastClub {
     Waffle waffle = new Waffle();
     Bisquit bisquit = new Bisquit();
     String userInput = "";
-    while (userInput != "exit") {
+    while (!userInput.equals("exit")) {
       System.out.println("Cooking with Claire, press exit to exit, press p for pancake, w for waffle, b for bisquit, s for stock amount, and r to refill");
       userInput = scan.nextLine();
       if (userInput.equals("p")) {
