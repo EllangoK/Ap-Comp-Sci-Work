@@ -6,12 +6,20 @@ public class Bisquit extends Batter {
   public Bisquit (){}
   
   public boolean possibleForBisquit(){
-    return BreakfastClub.batter.getMilk() >= 2/3 && BreakfastClub.batter.getBisquick() >= 9/4;
+    return getMilk() >= 2.0/3.0 && getBisquick() >= 9.0/4.0;
   }
   
   public void makeBisquit() {
-    BreakfastClub.batter.setMilk(BreakfastClub.batter.getMilk() - (2/3));
-    BreakfastClub.batter.setBisquick(BreakfastClub.batter.getBisquick() - 9/4);
+    setMilk(getMilk() - (2.0/3.0));
+    setBisquick(getBisquick() - 9.0/4.0);
     amountBisquit++;
+  }
+  
+  public int getBisquitAmount(){
+    return amountBisquit;
+  }
+  
+  public String toString(){
+    return "Amount of Bisquit: " + amountBisquit;
   }
 }
